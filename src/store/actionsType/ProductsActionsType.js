@@ -1,0 +1,3 @@
+exports.GET_ALL_PRODUCTS = "[Products] GET_ALL_PRODUCTS"
+exports.INCREASE_COUNT = "[Products] INCREASE_COUNT"
+exports.DECREASE_COUNT = "[Products] DECREASE_COUNT"
