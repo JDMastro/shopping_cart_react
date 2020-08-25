@@ -1,4 +1,4 @@
-const cart_var = require('../actionstype/CartActionsType');
+const cart_var = require('../actionsType/CartActionsType');
 
 const getTotal = ( data) => {
     var Total = 0;

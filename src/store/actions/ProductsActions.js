@@ -1,4 +1,4 @@
-const Products_var = require('../actionstype/ProductsActionsType');
+const Products_var = require('../actionsType/ProductsActionsType');
 
 var json = [
   {
