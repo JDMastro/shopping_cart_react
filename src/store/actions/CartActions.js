@@ -1,14 +1,28 @@
-const cart_variable = require('../actionsType/CartActionsType')
+const cart_var = require('../actionstype/CartActionsType');
 
-function add_products (data){
+function addCartShopping(data){
     return {
-        type: cart_variable.ADD_CART,
+        type : cart_var.ADD_CART_SHOPPING,
         payload: data
     }
 }
 
-export function Add_products(data){
-    return (dispatch) => {
-        dispatch(add_products(data))
+export function AddCartShopping(data){
+    return (dispatch)=>{
+        dispatch(addCartShopping(data))
     }
 }
+
+function deleteCartShopping(data){
+    return {
+        type : cart_var.DELETE_CART_SHOPPING,
+        payload: data
+    }
+}
+
+export function DeleteCartShopping(data){
+    return (dispatch)=>{
+        dispatch(deleteCartShopping(data))
+    }
+}
+

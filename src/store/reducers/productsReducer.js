@@ -1,4 +1,4 @@
-const Products_var = require('../actionsType/ProductsActionsType');
+const Products_var = require('../actionstype/ProductsActionsType');
 
 
 const ProductsReducer = (state = {
@@ -10,15 +10,6 @@ const ProductsReducer = (state = {
                 ...state,
                 Products: action.payload
             }
-        case Products_var.INCREASE_COUNT:
-            return Object.assign({}, state, {
-                Products : [...state.Products, state.Products[action.payload].counter += 1]
-            })
-           
-        case Products_var.DECREASE_COUNT:
-            return Object.assign({}, state, {
-                Products : [...state.Products, state.Products[action.payload].counter -= 1]
-            })
         default: return { ...state }
     }
 }

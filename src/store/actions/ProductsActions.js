@@ -1,4 +1,4 @@
-const Products_var = require('../actionsType/ProductsActionsType');
+const Products_var = require('../actionstype/ProductsActionsType');
 
 var json = [
   {
@@ -610,35 +610,8 @@ function getAllProducts(data){
     }
 }
 
-function increase_count_product(data){
-  return {
-    type : Products_var.INCREASE_COUNT,
-    payload: data
-  }
-}
-
-function decrease_count_product(data){
-  return {
-    type : Products_var.DECREASE_COUNT,
-    payload: data
-  }
-}
-
-
 export function GetAllProducts(){
     return (dispatch)=>{
         dispatch(getAllProducts(json))
     }
-}
-
-export function Decrease_count_product(data){
-  return (dispatch)=> {
-    dispatch(decrease_count_product(data))
-  }
-}
-
-export function Increase_count_product(data){
-  return (dispatch)=> {
-    dispatch(increase_count_product(data))
-  }
 }
